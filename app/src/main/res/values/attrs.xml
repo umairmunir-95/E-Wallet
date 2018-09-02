@@ -1,0 +1,26 @@
+<resources>
+
+    <attr name="label"
+          format="string" />
+    <attr name="text"
+          format="string" />
+
+
+    <declare-styleable name="TileView">
+        <attr name="label" />
+        <attr name="square"
+              format="boolean" />
+        <attr name="mybackground"
+              format="color" />
+        <attr name="myicon"
+              format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TextViewWithLabel">
+        <attr name="label" />
+        <attr name="text" />
+        <attr name="hideOnEmpty"
+              format="boolean" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal"
+    android:elevation="@dimen/elevation_size">
+    <ImageView
+        android:id="@+id/toolbar_iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:paddingLeft="@dimen/p5"
+        android:visibility="gone"
+        android:src="@drawable/ic_arrow_back_white_24dp"
+        />
+    <TextView
+        android:id="@+id/tv_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dashboard"
+        android:textSize="@dimen/label_x__big"
+        android:textColor="@color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:visibility="gone"
+        />
+</RelativeLayout>

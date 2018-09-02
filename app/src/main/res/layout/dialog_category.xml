@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/p50"
+            android:background="@drawable/bordered_tv"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+            <TextView
+                android:id="@+id/tv_option"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ts18"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="@dimen/p25"
+                android:layout_height="@dimen/p25"
+                android:background="@drawable/ic_close_white_24dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/category_dialogue"
+            android:layout_below="@id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/p10"
+            >
+            <EditText
+                android:id="@+id/et_body"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ts16"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/p0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/p2"
+                    android:layout_marginLeft="@dimen/p2"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:background="@drawable/edittext_straight_boader">
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cancel"
+                        android:textColor="@color/colorPrimary"
+                        android:background="?selectableItemBackground"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="@dimen/p0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/p2"
+                    android:layout_marginLeft="@dimen/p2"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:background="@drawable/edittext_straight_boader">
+                    <Button
+                        android:id="@+id/btn_save"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/save"
+                        android:textColor="@color/colorPrimary"
+                        android:background="?selectableItemBackground"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">E-Wallet</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_incoming_category">Add new income category</string>
+    <string name="add_outgoing_category">Add new expense category</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="incoming">Incoming</string>
+    <string name="outgoing">Outgoing</string>
+    <string name="categories">Categories</string>
+    <string name="total_categories">Total Categories</string>
+    <string name="category_name">Category Name</string>
+
 </resources>
